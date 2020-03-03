@@ -82,5 +82,3 @@ function placeOrder(cardNumber) {
     return `Your total cost is $${ttl_cost}, which will be charged to the card ${cardNumber}.`
   }
 }
-
-
