@@ -58,11 +58,11 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  if (cardNumber.length < 8) {
+  if (cardNumber.toString().length < 8) {
     return "Sorry, we don't have a credit card on file for you."
   } else {
     ttl_cost = total()
-    for (let i = 0; i < cart.length; i += 1) {
+    for (let i = 0; i < cart.length-1; i += 1) {
       removeFromCart(cart[i].itemName)
     }
     return `Your total cost is $${ttl_cost}, which will be charget to the card ${cardNumber}.`
