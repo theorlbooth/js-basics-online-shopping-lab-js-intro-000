@@ -58,20 +58,6 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  if (cardNumber.toString().length < 8) {
-    return "Sorry, we don't have a credit card on file for you."
-  } else if (cardNumber = 0) {
-  return "Sorry, we don't have a credit card on file for you."
-  } else {
-    ttl_cost = total()
-    for (let i = 0; i < cart.length-1; i += 1) {
-      removeFromCart(cart[i].itemName)
-    }
-    return `Your total cost is $${ttl_cost}, which will be charged to the card ${cardNumber}.`
-  }
-}
-
-function placeOrder(cardNumber) {
   if (cardNumber === undefined) {
     return "Sorry, we don't have a credit card on file for you."
   } else {
