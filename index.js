@@ -63,7 +63,7 @@ function placeOrder(cardNumber) {
   } else {
     ttl_cost = total()
     for (let i = 0; i < cart.length; i += 1) {
-      removeFromCart(cart[i].itemName)  
+      removeFromCart(cart[i].itemName)
     }
     return `Your total cost is $${ttl_cost}, which will be charget to the card ${cardNumber}.`
   }
