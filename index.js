@@ -61,7 +61,7 @@ function placeOrder(cardNumber) {
   if (cardNumber === undefined) {
     return "Sorry, we don't have a credit card on file for you."
   } else {
-    ttl_cost = total()
+    var ttl_cost = total()
     cart = []
     return `Your total cost is $${ttl_cost}, which will be charged to the card ${cardNumber}.`
   }
